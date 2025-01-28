@@ -9,7 +9,7 @@ services:
     container_name: ${PROJECT_NAME}-app
     restart: on-failure
     ports:
-      - "80:80"
+      - "10000:80"
     volumes:
       - ./src:/var/www/html
       - ./docker/php-apache/my-vhost.conf:/etc/apache2/sites-available/000-default.conf
