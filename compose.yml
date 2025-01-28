@@ -12,7 +12,7 @@ services:
       - "10000:80"
     volumes:
       - ./src:/var/www/html
-      - ./docker/php-apache/my-vhost.conf:/etc/apache2/sites-available/000-default.conf
+      # - ./docker/php-apache/my-vhost.conf:/etc/apache2/sites-available/000-default.conf
     depends_on:
       - mysql
       - phpmyadmin
